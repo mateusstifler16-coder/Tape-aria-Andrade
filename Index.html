@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapeçaria Andrade | Reforma e Fabricação de Estofados em Luziânia</title>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        :root {
+            --primary: #0f1c3f;
+            --secondary: #c5a880;
+            --dark: #1e1e1e;
+            --light: #f9f9f9;
+            --white: #ffffff;
+            --whatsapp: #25d366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(15, 28, 63, 0.85), rgba(15, 28, 63, 0.85)), url('https://unsplash.com') no-repeat center center/cover;
+            color: var(--white);
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp);
+            color: var(--white);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            background-color: #20ba5a;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: var(--primary);
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary);
+            margin: 10px auto 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 4px solid var(--primary);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-top-solid: var(--secondary);
+        }
+
+        .service-card i {
+            font-size: 40px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .steps-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .step {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .step-number {
+            background-color: var(--primary);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-weight: bold;
+            font-size: 18px;
+            border: 2px solid var(--secondary);
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+
+        .footer-info {
+            margin-bottom: 20px;
+        }
+
+        .footer-info p {
+            margin: 5px 0;
+            color: #cccccc;
+        }
+
+        .footer-info i {
+            color: var(--secondary);
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            section { padding: 50px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Tapeçaria <span>Andrade</span></div>
+        </div>
+    </header>
+
+    <section class="hero" style="max-width: 100%; padding: 0;">
+        <div class="hero-content">
+            <h1>Desenvolvemos o conforto e a beleza que o seu móvel merece</h1>
+            <p>Reforma e fabricação sob medida com acabamento premium. Atendimento especializado em Luziânia - GO e região.</p>
+            <a href="https://wa.me." class="btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> Solicitar Orçamento Grátis
+            </a>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-couch"></i>
+                <h3>Reforma de Sofás</h3>
+                <p>Troca de tecidos, espumas e reforço de estrutura para devolver a vida ao seu sofá.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chair"></i>
+                <h3>Cadeiras e Poltronas</h3>
+                <p>Estofamento residencial ou comercial com costura reforçada e materiais de alta durabilidade.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bed"></i>
+                <h3>Cabeceiras sob Medida</h3>
+                <p>Criação e reforma de cabeceiras de cama planejadas para transformar o seu quarto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" style="background-color: #f0f2f5; max-width: 100%;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title">Como Funciona?</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Envie uma Foto</h3>
+                    <p>Mande fotos do seu móvel atual pelo WhatsApp para avaliarmos.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Escolha o Tecido</h3>
+                    <p>Escolha a opção ideal em nosso catálogo (Suede, Linho, Couro, Impermeáveis e mais).</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Retirada e Entrega</h3>
+                    <p>Buscamos seu móvel, fazemos o serviço com todo cuidado e entregamos renovado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <p><i class="fas fa-phone-alt"></i> WhatsApp: (61) 98510-9529</p>
+            <p><i class="fas fa-map-marker-alt"></i> Atendimento em Luziânia - GO</p>
+        </div>
+        <p>&copy; 2026 Tapeçaria Andrade. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
